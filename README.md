@@ -1,14 +1,14 @@
-node-rdkafka - Node.js wrapper for Kafka C/C++ library
+node-funtastic - An experimental fork of Blizzard's Node.js wrapper for Kafka C/C++ library
 ==============================================
 
-Copyright (c) 2016 Blizzard Entertainment.
-
+The original `node-rdkafka` is Copyright (c) 2016 Blizzard Entertainment and you can find it here:
 [https://github.com/blizzard/node-rdkafka](https://github.com/blizzard/node-rdkafka)
 
-[![Build Status](https://travis-ci.org/Blizzard/node-rdkafka.svg?branch=master)](https://travis-ci.org/Blizzard/node-rdkafka)
-[![npm version](https://badge.fury.io/js/node-rdkafka.svg)](https://badge.fury.io/js/node-rdkafka)
 
 # Overview
+
+This fork uses a fixed, included `librdkafka` version `1.0.0`. And it's only tested, with the changes tagged down below on macOS Mojave.
+
 
 The `node-rdkafka` library is a high-performance NodeJS client for [Apache Kafka](http://kafka.apache.org/) that wraps the native  [librdkafka](https://github.com/edenhill/librdkafka) library.  All the complexity of balancing writes across partitions and managing (possibly ever-changing) brokers should be encapsulated in the library.
 
@@ -33,7 +33,7 @@ Play nice; Play fair.
 * Linux/Mac
 * Windows?! See below
 * openssl 1.0.2
-* lz4 1.8.3
+* lz4 1.8.3  👈 `different to node-rdkafka`
 
 ### Mac OS High Sierra / Mojave
 
@@ -43,6 +43,9 @@ OpenSSL has been upgraded in High Sierra and homebrew does not overwrite default
 export CPPFLAGS="-I/usr/local/opt/openssl/include -I /usr/local/opt/lz4/include"
 export LDFLAGS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/lz4/lib"
 ```
+👆`different to node-rdkafka`
+
+
 
 Then you can run `npm install` on your application to get it to build correctly.
 
