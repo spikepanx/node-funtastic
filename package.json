@@ -1,7 +1,7 @@
 {
   "name": "node-rdkafka-experimental-librdkafka-v1.0.0",
   "version": "1.0.0",
-  "description": "Node.js bindings for librdkafka v1.0.0 A fork of git@github.com:Blizzard/node-rdkafka.git",
+  "description": "Blizzard brilliant node-rdkafka, binding tweaked to librdkafka v1.0.0",
   "librdkafka": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
