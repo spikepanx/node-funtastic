@@ -1,7 +1,7 @@
 {
   "name": "node-funtastic",
   "version": "1.0.2",
-  "description": "Blizzard brilliant node-rdkafka, binding tweaked to librdkafka v1.0.0",
+  "description": "Blizzard brilliant node-rdkafka, but binding tweaked to librdkafka v1.0.0",
   "librdkafka": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
@@ -16,16 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:spikepanx/node-rdkafka.git"
+    "url": "git@github.com:spikepanx/node-funtastic.git"
   },
   "contributors": [
     {
-      "name": "Stephen Parente",
-      "email": "webmakersteve@gmail.com"
-    },
-    {
-      "name": "Matt Gollob",
-      "email": "mattness@users.noreply.github.com"
+      "name": "Michael Heinecke",
+      "email": "root.heinecke@gmail.com"
     }
   ],
   "license": "MIT",
