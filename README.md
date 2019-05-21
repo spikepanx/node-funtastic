@@ -12,7 +12,7 @@ Copyright (c) 2016 Blizzard Entertainment.
 
 The `node-rdkafka` library is a high-performance NodeJS client for [Apache Kafka](http://kafka.apache.org/) that wraps the native  [librdkafka](https://github.com/edenhill/librdkafka) library.  All the complexity of balancing writes across partitions and managing (possibly ever-changing) brokers should be encapsulated in the library.
 
-__This library currently uses `librdkafka` version `0.11.6`.__
+__This library currently uses `librdkafka` version `1.0.0`.__
 
 ## Reference Docs
 
@@ -33,14 +33,15 @@ Play nice; Play fair.
 * Linux/Mac
 * Windows?! See below
 * openssl 1.0.2
+* lz4 1.8.3
 
 ### Mac OS High Sierra / Mojave
 
 OpenSSL has been upgraded in High Sierra and homebrew does not overwrite default system libraries. That means when building node-rdkafka, because you are using openssl, you need to tell the linker where to find it:
 
 ```sh
-export CPPFLAGS=-I/usr/local/opt/openssl/include
-export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS="-I/usr/local/opt/openssl/include -I /usr/local/opt/lz4/include"
+export LDFLAGS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/lz4/lib"
 ```
 
 Then you can run `npm install` on your application to get it to build correctly.
@@ -93,7 +94,7 @@ var Kafka = require('node-rdkafka');
 
 ## Configuration
 
-You can pass many configuration options to `librdkafka`.  A full list can be found in `librdkafka`'s [Configuration.md](https://github.com/edenhill/librdkafka/blob/v0.11.6/CONFIGURATION.md)
+You can pass many configuration options to `librdkafka`.  A full list can be found in `librdkafka`'s [Configuration.md](https://github.com/edenhill/librdkafka/blob/v1.0.0/CONFIGURATION.md)
 
 Configuration keys that have the suffix `_cb` are designated as callbacks. Some
 of these keys are informational and you can choose to opt-in (for example, `dr_cb`). Others are callbacks designed to
