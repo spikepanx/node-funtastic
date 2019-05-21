@@ -2,7 +2,7 @@
   "name": "node-funtastic",
   "version": "1.0.2",
   "description": "Blizzard brilliant node-rdkafka, but binding tweaked to librdkafka v1.0.0",
-  "librdkafka": "1.0.0",
+  "librdkafka": "1.0.3",
   "main": "lib/index.js",
   "scripts": {
     "configure": "node-gyp configure",
