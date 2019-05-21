@@ -1,5 +1,5 @@
 {
-  "name": "node-rdkafka-experimental-librdkafka-v1.0.0",
+  "name": "node-funtastic",
   "version": "1.0.0",
   "description": "Blizzard brilliant node-rdkafka, binding tweaked to librdkafka v1.0.0",
   "librdkafka": "1.0.0",
