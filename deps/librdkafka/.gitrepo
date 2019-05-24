@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:edenhill/librdkafka.git
+	branch = sslcertcb
+	commit = 8ebf80aa0db86dcb2db851b8cd5894960928fec8
+	parent = 0cf7903796b467af78cb5a1538f3356b7e49ff31
+	method = merge
+	cmdver = 0.4.0
